@@ -22,18 +22,19 @@
     <link rel="shortcut icon" sizes="80x80" href="./images/favicon.png" />
     <title>Qtraveling | Tourism Services | Flight | Hotel | Visa</title>
     <meta name="enamad" content="47102464" />
-    <link rel="stylesheet" type="text/css" href="./css/traveling-main.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/traveling-main.css" /> -->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.basiscore.net/basisfly.com/css/reservation_multiLang_css_calendar.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css" /> -->
-    <link rel="stylesheet" type="text/css" href="./css/datepicker-en.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/datepicker-en.css" /> -->
     <script src="https://cdn.basiscore.net/basisfly.com/js/reservation_js_library.js" type="text/javascript"></script>
+    <basis file="test-jami.inc" core="call" lid="2" ></basis>
 
 </head>
 
 <body>
     <section class="loginRegister"></section>
-    <basis file="header-en.inc" core="call"></basis>
+    <basis file="header.inc" core="call" lid="2" ></basis>
     <main>
         <section class="background-banner">
             <div class="bc-main">
@@ -53,7 +54,7 @@
             <div class="clr"></div>
             <section class="slogan-section item-container ">
                 <div class="slogan-card">
-                    <img src="[##cms.cms.cdn##]/images/slogan-destinations.png" alt="traveling-slogan1" width="50px"
+                    <img src="https://www.qtraveling.ir/images/slogan-destinations.png" alt="traveling-slogan1" width="50px"
                         height="45px" />
                     <h3 class="txt-p5">
                         550+ destinations
@@ -231,15 +232,15 @@
     </main>
 
     <section class="item-container">
-        <basis file="footer-en.inc" core="call"></basis>
+        <basis file="footer.inc" core="call" lid="2"></basis>
     </section>
     <!----------------JS DATEPICKER ---------------->
     <script src="https://www.basisfly.com/js/reservation_date_pickerUi.js" type="text/javascript"></script>
     <script src="https://www.basisfly.com/js/reservation_date_picker.js" type="text/javascript"></script>
     <script src="https://www.basisfly.com/js/reservation_main_date_picker.js" type="text/javascript"></script>
     <!-- ************************************ -->
-    <script src="[##cms.cms.cdn##]/js/owl_carousel.js" type="text/javascript"></script>
-    <basis core="call" file="Client_RkeyScript.inc"></basis>
+    <script src="https://www.qtraveling.ir/js/owl_carousel.js" type="text/javascript"></script>
+    <basis core="call" file="Client_RkeyScript.inc" lid="2"></basis>
 </body>
 
 </html>
