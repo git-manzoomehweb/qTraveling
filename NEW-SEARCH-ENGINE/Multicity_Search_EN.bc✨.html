@@ -24,7 +24,7 @@
 
 <body onload="onloadFunc()">
     <section class="loginRegister"></section>
-    <basis core="call" file="header-en.inc" />
+    <basis core="call" file="header.inc" />
     <div id="bg-popup" class="unvisible"></div>
     <div class="message-box unvisible">
         <i class="icon-message-box">
@@ -823,7 +823,7 @@
         <div class="clr"></div>
     </section>
     <script src="https://cdn.basiscore.net/basisfly.com/js/reservation_js_library.js" type="text/javascript"></script>
-    <basis core="call" file="footer-en.inc" />
+    <basis core="call" file="footer.inc" />
     <basis core="call" file="Client_MultiLang_Calendar.inc" />
     <script src="https://cdn.basiscore.net/basisfly.com/js/reservation_multiLang_js_calendar.js"
         type="text/javascript"></script>
@@ -2852,7 +2852,7 @@
 
                     };
                     let splited_element = element.mstring.split("-");
-                    return <span><span className="weekday">{date.weekday[element.weekday]},</span><span className="day">{splited_element[2]}</span><span className="month">{date.month[splited_element[1].replace(/^0+/, '')]}</span></span>
+                    return <span><span className="weekday">{date.weekday[element.weekday]},</span><span className="day">{splited_element[2]},</span><span className="month">{date.month[splited_element[1].replace(/^0+/, '')]}</span></span>
                 }
                 renderAbbreviationAirport(element) {
                     let element_splited = element.split("/")

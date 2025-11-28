@@ -1,3 +1,5 @@
+@import url(./traveling-login.css);
+
 .search-box-hidden {display: none;}
 /* banner */
 .title-hidden{width: 0; height: 0;visibility: hidden;}
