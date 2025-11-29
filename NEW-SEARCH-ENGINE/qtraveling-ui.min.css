@@ -5,7 +5,7 @@
 .color-gray-traveling-1{color :#636a85;}
 .small-title-banner{font-weight: bolder;}
 .title-banner-container{width: 40%;font-size: 60px;font-weight: bold;}
-.background-banner{background-image: url(../images/banner-1.jpg);width: 100%;height:500px;background-size: cover;}
+.background-banner{background-image: url(../images/banner-1.jpg);width: 100%;min-height:500px;background-size: cover;padding-bottom: 1em;}
 .line-height-65{line-height: 65px;}
 /* banner */
 /* searchbox */
@@ -365,18 +365,34 @@
 
 
 /* search engine desktop */
- #search-box {
+#search-box{
+    background: transparent !important;
+    /* margin-bottom: 1em; */
+}
+#search-box .m-auto.w-full .clear-both.float-right.w-full
+ {
+    float: none !important;
+}
+
+.search-nav.mb-4 {
+    background: white;
+    padding: 1em;
+    border-radius: 1em 1em 0 0 !important;
+}
+
+
+ .module-form {
      max-width: 1200px;
      width: 100%;
      margin: 0 auto;
-     min-height: 270px;
+     /* min-height: 270px; */
      background-color: white;
-     border-radius: 15px;
-     box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
+border-radius: 0 0 1em 1em;
+     /* box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
      -webkit-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
-     -moz-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
-     margin-top: 80px;
-     min-height: 288px;
+     -moz-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45); */
+     margin-top: -19px;
+     /* min-height: 288px; */
      padding: 24px !important;
      padding-bottom: 85px !important;
      position: relative
@@ -406,7 +422,7 @@
      color: white;
      font-size: 16px;
      position: absolute;
-     bottom: -65px;
+     bottom: 18px;
      left: 0;
      right: 0;
      margin: 0 auto
@@ -677,11 +693,13 @@
  .searchList {
      box-shadow: 0 4px 8px rgba(144, 149, 167, .2);
           border-radius: 10px !important;
+          overflow-x: hidden;
 
  }
 
  .searchList ul li:not(:first-child) {
-     border-bottom: 1px solid #c8cfd7
+     border-bottom: 1px solid #c8cfd7;
+     display: flex;
  }
 
  .searchList .selectLocation {
@@ -736,7 +754,7 @@
  .Add-Remove {
      background-color: transparent !important;
      border-radius: 6px;
-     width: 10% !important;
+     width: 14% !important;
      color: white;
      font-size: 16px;
      padding: 0;
@@ -873,5 +891,38 @@
  .search-box-container input, .search-box-container select, .search-box-container button{
         font-family: "IRANSansWebEnNum" !important;
 
+}
+
+.search-box-container .r-hotel .departure-date::after {
+    display: none !important;
+}
+
+.passenger-birthday-dropdown{
+    z-index: 999 !important;
+}
+.search-box-container p.auto-fit.clear-both.text-base.text-textColor.pt-\[23px\] {
+    padding-top: 0 !important;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .reserve-field{width: 100% !important;}
+    .date__searched__container.Basis_Date_Box.w-1\/5.flex.gap-2.max-xl\:w-full.max-xl\:mb-4 {
+    width: 100% !important;
+}
+.Flightclass-Passenger.w-2\/5.flex.gap-2.max-xl\:w-full.max-xl\:block.max-xl\:gap-0 {
+    width: 100% !important;
+}
+}
+
+
+
+body{
+    position: relative;
+}
+.addroute-icon ,
+.removeall-icon{
+    display: none !important;
 }
 /* search engine desktop */

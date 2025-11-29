@@ -5,7 +5,7 @@
 .color-gray-traveling-1{color :#636a85;}
 .small-title-banner{font-weight: bolder;}
 .title-banner-container{width: 40%;font-size: 60px;font-weight: bold;}
-.background-banner{background-image: url(../images/banner-1.jpg);width: 100%;height:500px;background-size: cover;}
+.background-banner{background-image: url(../images/banner-1.jpg);width: 100%;min-height:500px;background-size: cover;padding-bottom: 1em;}
 .line-height-65{line-height: 65px;}
 /* banner */
 /* searchbox */
@@ -177,8 +177,8 @@
     .Noactive-parent .width_50 {width: 100%;} */
 /* searchbox */
 /* slogan */
-.slogan-section{display: flex;justify-content: space-between;margin-top: 170px !important;}
-.slogan-card{width: 32.5%;text-align: center;justify-content: center;border-radius: 10px; border: 1px solid #eaeaea;padding: 20px;}
+.slogan-section{display: flex;justify-content: space-between;margin-top: 70px !important;}
+.slogan-card{width: 100%;text-align: center;justify-content: center;border-radius: 10px; border: 1px solid #eaeaea;padding: 20px;}
 .txt-p5{padding: 5px 0;}
 .txt-bld-gray{color: #a8a39d;line-height: 22px;font-family: 'poppins','roboto' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
 /* slogan */
@@ -208,7 +208,8 @@
 .ml-20{margin-left: 20px}
 .w-50.d-flex.box-newsletter>.vertical-center.ml-20>span{font-size: 16px;color: #1b1f22;font-weight: 500;}
 .w-50.d-flex.box-newsletter>.vertical-center.ml-20>h3{font-size: 24px;color: #1b1f22;font-weight: 900;}
-.stripped-input > input{border: 1px dashed #b2b8be !important;background-color: white !important;padding: 10px !important;width: 300px !important;max-width: 480px !important;width: 100% !important;}
+.stripped-input > input{border: 1px dashed #b2b8be !important;background-color: white !important;padding: 10px !important;
+    width: 300px !important;max-width: 480px !important;width: 90% !important;}
 .stripped-input-captcha{border: 1px dashed #b2b8be;background-color: white;padding: 10px ;width: 300px;}
 .W-430-p{max-width: 480px ;width: 100%;}
 .sub-btn{padding: 10px;background-color: #f29d1e;color: white;border-radius: 0 3px 3px 0;margin-left: -7px;}
@@ -303,7 +304,7 @@
 @media only screen and (max-width: 1000px){
     /* newsletter */
         .newsletter-section {        height: unset;      }
-      .w-50.d-flex.box-newsletter {justify-content: center;width: 100%;        }
+      .w-50.d-flex.box-newsletter {justify-content: center;width: 90%;        }
         .w-50.box-newsletter { width: 100%;margin: 0 auto;            }
         /* newsletter */
 }
@@ -365,18 +366,32 @@
 
 
 /* search engine desktop */
- #search-box {
+#search-box{
+    background: transparent !important;
+}
+#search-box .m-auto.w-full .clear-both.float-right.w-full
+ {
+    float: none !important;
+}
+
+.search-nav.mb-4 {
+    background: white;
+    padding: 1em;
+    border-radius: 1em 1em 0 0 !important;
+}
+
+ .module-form {
      max-width: 1200px;
      width: 100%;
      margin: 0 auto;
-     min-height: 270px;
+     /* min-height: 270px; */
      background-color: white;
-     border-radius: 15px;
-     box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
+border-radius: 0 0 1em 1em;
+     /* box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
      -webkit-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
-     -moz-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45);
-     margin-top: 80px;
-     min-height: 288px;
+     -moz-box-shadow: -1px 8px 17px -5px rgba(0, 0, 0, .45); */
+     margin-top: -19px;
+     /* min-height: 288px; */
      padding: 24px !important;
      padding-bottom: 85px !important;
      position: relative
@@ -406,7 +421,7 @@
      color: white;
      font-size: 16px;
      position: absolute;
-     bottom: -65px;
+     bottom: 18px;
      left: 0;
      right: 0;
      margin: 0 auto
@@ -424,13 +439,13 @@
      z-index: 9999999;
      position: absolute;
      border-radius: 50px;
-     right: -25px !important;
+     right: 14px !important;
      border: 3px solid #FFF;
      border-radius: 50%;
      width: 40px;
      height: 40px;
      line-height: 35px;
-     top: 31% !important;
+     top: 88% !important;
      cursor: pointer;
      background-color: var(--primary-300);
      background: var(--primary-300);
@@ -655,8 +670,7 @@
  }
 
  .label-passengers svg,
- .label-flightclass svg,
- .exchangeRoute svg {
+ .label-flightclass svg {
      min-width: 25px;
      min-height: 25px;
      width: 25px;
@@ -664,6 +678,16 @@
      scale: 1
  }
 
+.exchangeRoute svg {
+    min-width: 16px;
+    min-height: 7px;
+    width: 16px;
+    height: 11px;
+    scale: 1.25;
+}
+span.exchangeRoute.absolute.right-1.z-\[1\].cursor-pointer.w-10.h-10.leading-10.text-center.rounded-type-2.text-white.bg-bgColor-500.hover\:bg-primary.rotate-90.top-\[65px\]{
+    background-color: var(--primary-400) !important;
+}
  span.exchangeRoute {
      display: flex;
      justify-content: center;
@@ -677,11 +701,14 @@
  .searchList {
      box-shadow: 0 4px 8px rgba(144, 149, 167, .2);
           border-radius: 10px !important;
+          overflow-x: hidden;
 
  }
 
  .searchList ul li:not(:first-child) {
-     border-bottom: 1px solid #c8cfd7
+     border-bottom: 1px solid #c8cfd7;
+          display: flex;
+
  }
 
  .searchList .selectLocation {
@@ -736,7 +763,7 @@
  .Add-Remove {
      background-color: transparent !important;
      border-radius: 6px;
-     width: 10% !important;
+     width: 100% !important;
      color: white;
      font-size: 16px;
      padding: 0;
@@ -795,15 +822,20 @@
  }
 
  .route-minus-btn.text-xl.pr-4.text-red-600.w-1\/4.h-20.leading-\[80px\].max-xl\:absolute.max-xl\:top-0.max-xl\:left-0.max-xl\:h-auto.max-xl\:leading-normal.max-xl\:text-base.max-xl\:text-left.hover\:text-primary.hover\:text-remove-route-hover-color.cursor-pointer {
-     background: rgb(146, 1, 1);
-     border-radius: 6px;
-     height: 37px !important;
-     color: white;
-     column-gap: 4px;
-     padding: 0;
-     margin-left: -15px
+    background: rgb(146, 1, 1);
+    border-radius: 6px;
+    height: 37px !important;
+    color: white;
+    column-gap: 4px;
+    padding: 0;
+    width: fit-content !important;
+    padding: 1em;
+    right: 0;
+    left: auto;
  }
-
+.flight-routes.w-full.block {
+    margin-top: 1em;
+}
  .route-minus-btn>svg {
      width: 25px;
      height: 25px;
@@ -893,5 +925,18 @@
 .search-box-container .float-right.px-2.text-xs.h-fit.py-2.relative.rounded-lg.text-primary.label-search-list{
   padding-left: 1em !important;
 color: #1b1f22 !important;
+}
+
+
+.search-box-container .r-hotel .departure-date::after {
+    display: none !important;
+}
+
+
+.passenger-birthday-dropdown{
+    z-index: 999 !important;
+}
+.search-box-container p.auto-fit.clear-both.text-base.text-textColor.pt-\[23px\] {
+    padding-top: 0 !important;
 }
 /* search engine desktop */
