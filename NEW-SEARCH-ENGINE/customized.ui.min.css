@@ -1146,7 +1146,7 @@ main {
 a,
 i,
 span {
-    display: inline-block;
+    /* display: inline-block; */
     font-style: normal;
     vertical-align: middle
 }
