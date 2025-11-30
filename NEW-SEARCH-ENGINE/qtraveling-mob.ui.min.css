@@ -939,4 +939,9 @@ color: #1b1f22 !important;
 .search-box-container p.auto-fit.clear-both.text-base.text-textColor.pt-\[23px\] {
     padding-top: 0 !important;
 }
+
+.Basis_Date_Box .auto-fit{
+    display: none !important;
+}
+
 /* search engine desktop */

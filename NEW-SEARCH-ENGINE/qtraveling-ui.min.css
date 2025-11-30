@@ -904,6 +904,9 @@ border-radius: 0 0 1em 1em;
     padding-top: 0 !important;
 }
 
+.Basis_Date_Box .auto-fit{
+    display: none !important;
+}
 
 
 @media only screen and (max-width: 1280px) {
